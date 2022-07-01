@@ -5,7 +5,7 @@
 }
 
 :root {
-  --background-left: url(/assets/img/bg.avif);
+  --background-left: url(bg.avif);
   --full-width: 100vw;
   --full-height: 100vh;
   --half-width: 50vw;
