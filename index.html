@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odin sign-up form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Oswald:wght@300&display=swap"
+      rel="stylesheet"
+      />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="left">
+        <div class="odin-container">
+          <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="Odin Project Logo">
+          <p>The Odin Project</p>
+        </div>
+      </div>
+      <div class="right">
+        <section class="heading">
+        <section class="blabla-section">
+          <h2 class="blabla-text">This is not a real online service! You know you need something<br>like this in your life to help you realize your deepest dreams.<br>Sign up now to get started.</h2>
+          <h3 class="blabla-end-text">You <i>know</i> you want to.</h3>
+        </section>
+        <section class="form-section">
+          <h2 class="form-section__title">Let's do this</h2>
+          <form class="formlol" action="/register" method="post">
+            <p>
+              <label>First name</label><br>
+              <input type="text" name="first_name">
+            </p>
+            <p>
+              <label>Last name</label><br>
+              <input type="text" name="last_name">
+            </p>
+            <p>
+              <label>Email</label><br>
+              <input type="email" name="email" required>
+            </p>
+            <p>
+              <label>Phone number</label><br>
+              <input type="tel" name="phone">
+            </p>
+            <p>
+              <label>Password</label><br>
+              <input type="password" name="password">
+            </p>
+                        <p>
+              <label>Password confirmation</label><br>
+              <input type="password" name="passwordconfirmation">
+            </p>
+            <fieldset class="outter-form">
+              <button class="btn">Sign up</button><p>Already have an account? <span>Log in</span>
+            </fieldset>
+          </form>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

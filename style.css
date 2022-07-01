@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-left: url(/assets/img/bg.avif);
+  --full-width: 100vw;
+  --full-height: 100vh;
+  --half-width: 50vw;
+  --section-height: 33%;
+  --oswald-fallback: "Oswald", sans-serif;
+  --mukta-fallback: "Mukta", sans-serif;
+  --left-padding: 5%;
+  --left-img: 120px;
+}
+
+body {
+  max-width: var(--full-width);
+  max-height: var(--full-height);
+}
+
+.main,
+.section {
+  display: flex;
+}
+
+.main,
+.heading {
+  width: 100%;
+  height: var(--full-height);
+  max-width: 100%;
+  max-height: var(--full-height);
+}
+
+.left,
+.right {
+  height: var(--full-height);
+}
+
+.left {
+  width: 40vw;
+  background-image: var(--background-left);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.right {
+  width: 60vw;
+}
+
+section {
+  flex-direction: column;
+  height: var(--section-height);
+  width: 100%;
+}
+
+/* Blabla section */
+
+.blabla-section {
+  display: flex;
+  width: 100%;
+  height: calc(var(--full-height) / 3);
+  justify-content: flex-end;
+  padding-bottom: 2%;
+  background-color: #f9fafb;
+}
+
+.blabla-text,
+.blabla-end-text {
+  padding-left: var(--left-padding);
+  font-size: clamp(0.5rem, 1.6rem, 2.1rem);
+  font-family: var(--oswald-fallback);
+}
+
+.blabla-text {
+  padding-top: 5%;
+  padding-bottom: 2%;
+}
+
+/* Odin logo */
+
+.odin-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  height: var(--left-img);
+  top: calc(33% - var(--left-img));
+}
+
+.odin-container > img {
+  height: 80%;
+}
+
+.odin-container > p {
+  font-weight: bolder;
+  font-size: 3rem;
+  color: whitesmoke;
+  font-family: "Mukta", sans-serif;
+}
+
+/* Form section */
+
+.form-section {
+  padding-top: 2%;
+  background-color: #ffffff;
+  font-family: var(--oswald-fallback);
+  height: auto;
+  display: flex;
+}
+.form-section__title {
+  padding-left: var(--left-padding);
+}
+
+.formlol {
+  display: grid;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  padding-left: var(--left-padding);
+  box-shadow: 0px 15px 5px -15px #111;
+  row-gap: 10px;
+  padding-top: 2%;
+  grid-template-columns: repeat(2, 35%);
+  align-items: center;
+}
+
+input {
+  width: clamp(50px, 350px, 600px);
+  border-radius: 5px;
+  border: 1px solid rgba(216, 203, 203, 0.5);
+  padding: 4px;
+}
+
+fieldset {
+  border: none;
+}
+
+label {
+  font-family: var(--mukta-fallback);
+}
+
+.outter-form {
+  position: relative;
+  top: calc(var(--section-height) + 95px);
+}
+
+.btn {
+  border: none;
+  width: 200px;
+  background-color: #459bc6;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+}
+
+.outter-form > .btn {
+  font-size: 1rem;
+  font-family: "Mukta", sans-serif;
+}
+.outter-form > p {
+  padding-top: 2%;
+  font-family: "Mukta", sans-serif;
+}
+
+.outter-form > p > span {
+  color: #459bc6;
+}
